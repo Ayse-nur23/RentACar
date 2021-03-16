@@ -1,0 +1,22 @@
+<table  class="table">
+    <thead>
+        <tr>
+        <th scope="col">Kiralama</th>
+        <th scope="col">Id</th>
+        <th scope="col">Ad</th>
+        <th scope="col">Soyad</th> 
+        <th scope="col">Alış Tarihi</th>
+        <th scope="col">Teslim Tarihi</th> 
+        </tr>     
+    </thead>
+    <tr *ngFor="let rental of rentals">
+        <td></td>
+        <td>{{rental.rentalId}}</td>
+        <td>{{rental.brandName}}</td>
+        <td>{{rental.firstName}}</td>
+        <td>{{rental.lastName}}</td>
+        <td>{{rental.rentDate}}</td>
+        <td>{{rental.returnDate}}</td>
+    </tr>
+</table>
+
